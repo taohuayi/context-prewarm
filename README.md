@@ -1,5 +1,9 @@
 # Context Prewarm
 
+[![CI](https://github.com/taohuayi/context-prewarm/actions/workflows/ci.yml/badge.svg)](https://github.com/taohuayi/context-prewarm/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/taohuayi/context-prewarm)](https://github.com/taohuayi/context-prewarm/releases/tag/v0.1.0)
+
+[Latest release: v0.1.0](https://github.com/taohuayi/context-prewarm/releases/tag/v0.1.0) · [Changelog](CHANGELOG.md)
+
 **Turn otherwise-idle AI capacity into reusable context *and* durable work.**
 
 [简体中文](README.zh-CN.md) · [Skill](skills/context-prewarm/SKILL.md) · [Example plan](examples/warmup-plan.md)

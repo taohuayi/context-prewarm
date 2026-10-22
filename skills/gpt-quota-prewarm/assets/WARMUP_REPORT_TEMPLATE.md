@@ -1,4 +1,4 @@
-# Context Prewarm Report — YYYY-MM-DD
+# GPTQuotaPrewarm Report — YYYY-MM-DD
 
 ## Decision
 - Status: planned / approved / completed / deferred / rejected

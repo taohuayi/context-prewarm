@@ -16,7 +16,7 @@
 
 ## Execution prompt
 
-> Use `context-prewarm` to prepare for repeated PR reviews in this public repository. Read the README, architecture docs, contribution guide, package manifests, test configuration and up to three central modules. Do not modify source code or run deployments. Produce `docs/PROJECT_CONTEXT.md` with a module map, test entry points, important invariants, evidence paths, stale/unknown areas and a succinct handoff. Do not read credentials or secrets. End with a report explaining how to continue in the same session and how to compare cached usage to a cold-start PR review.
+> Use `gpt-quota-prewarm` to prepare for repeated PR reviews in this public repository. Read the README, architecture docs, contribution guide, package manifests, test configuration and up to three central modules. Do not modify source code or run deployments. Produce `docs/PROJECT_CONTEXT.md` with a module map, test entry points, important invariants, evidence paths, stale/unknown areas and a succinct handoff. Do not read credentials or secrets. End with a report explaining how to continue in the same session and how to compare cached usage to a cold-start PR review.
 
 ## Success criteria
 

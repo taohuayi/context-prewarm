@@ -1,11 +1,11 @@
 ---
-name: context-prewarm
-description: Assess and productively use otherwise-idle AI assistant capacity to prepare stable context for likely future tasks while creating durable artifacts. Use when a user has spare Codex/agent quota before reset, asks to prewarm project context, reduce future repeated input cost, or compare candidate warm-up work. Never assume cache hits or subscription-credit savings.
+name: gpt-quota-prewarm
+description: Help Codex users assess and productively use otherwise-idle GPT assistant capacity to prepare stable context for likely future tasks while creating durable artifacts. Use when a user has spare Codex/agent quota before reset, asks to prewarm project context, reduce future repeated input cost, or compare candidate warm-up work. Never assume cache hits or subscription-credit savings.
 license: MIT
 compatibility: Agent Skills clients with access to user-authorized project files; optional Python 3 for local planning tools.
 ---
 
-# Context Prewarm
+# GPTQuotaPrewarm — a Codex-oriented quota prewarming skill
 
 ## Purpose
 

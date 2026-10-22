@@ -1,3 +1,21 @@
+# GPTQuotaPrewarm v0.2.0 — Codex-first rebrand
+
+**GPTQuotaPrewarm** is the new name for Context Prewarm. This release preserves the original idea: use spare Codex usage capacity to prepare future work, prioritizing independently useful artifacts and measuring cache benefits instead of assuming them.
+
+## Changes
+
+- Renamed the Agent Skill from `context-prewarm` to `gpt-quota-prewarm` (breaking installation path change).
+- Updated the English and Chinese README, CLI help text, examples, validator and report template.
+- Clarified the Codex-oriented use case and kept the project's explicit non-affiliation with OpenAI.
+- Kept old `v0.1.0` release notes below for historical accuracy.
+- Repository rename to `gpt-quota-prewarm` is a separate GitHub Settings operation; GitHub's redirect preserves links to old repository URLs once renamed.
+
+### Upgrade from v0.1.0
+
+Remove the old `.agents/skills/context-prewarm` directory if installed and install `skills/gpt-quota-prewarm` as `.agents/skills/gpt-quota-prewarm`. Avoid loading both skill names simultaneously.
+
+---
+
 # Context Prewarm v0.1.0 — First public release
 
 **Context Prewarm** is an experimental, open-source Agent Skill for turning otherwise-idle AI assistant capacity into useful preparation for likely future work, including *conditionally* reusable model context and durable, inspectable project artifacts.

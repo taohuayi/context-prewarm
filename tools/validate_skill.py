@@ -5,7 +5,7 @@ import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL = ROOT / "skills" / "context-prewarm" / "SKILL.md"
+SKILL = ROOT / "skills" / "gpt-quota-prewarm" / "SKILL.md"
 
 
 def validate(path: Path = SKILL) -> None:
@@ -39,4 +39,4 @@ if __name__ == "__main__":
     except (OSError, ValueError) as exc:
         print(f"SKILL INVALID: {exc}", file=sys.stderr)
         raise SystemExit(1)
-    print("SKILL OK: context-prewarm")
+    print("SKILL OK: gpt-quota-prewarm")

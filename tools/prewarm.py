@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Offline planner and illustrative cost estimator for Context Prewarm.
+"""Offline planner and illustrative cost estimator for GPTQuotaPrewarm.
 
 No network, no access to account usage, no API keys, no Codex credit conversion.
 """

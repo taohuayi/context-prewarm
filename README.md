@@ -1,14 +1,14 @@
-# Context Prewarm
+# GPTQuotaPrewarm — Codex Quota Prewarming & Prompt Cache Workflow
 
-[![CI](https://github.com/taohuayi/context-prewarm/actions/workflows/ci.yml/badge.svg)](https://github.com/taohuayi/context-prewarm/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/taohuayi/context-prewarm)](https://github.com/taohuayi/context-prewarm/releases/tag/v0.1.0)
+[![CI](https://github.com/taohuayi/context-prewarm/actions/workflows/ci.yml/badge.svg)](https://github.com/taohuayi/context-prewarm/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/taohuayi/context-prewarm)](https://github.com/taohuayi/context-prewarm/releases/tag/v0.2.0)
 
-[Latest release: v0.1.0](https://github.com/taohuayi/context-prewarm/releases/tag/v0.1.0) · [Changelog](CHANGELOG.md)
+[Latest release: v0.2.0](https://github.com/taohuayi/context-prewarm/releases/tag/v0.2.0) · [Changelog](CHANGELOG.md)
 
-**Turn otherwise-idle AI capacity into reusable context *and* durable work.**
+**Turn unused Codex quota into reusable GPT context and durable work.**
 
-[简体中文](README.zh-CN.md) · [Skill](skills/context-prewarm/SKILL.md) · [Example plan](examples/warmup-plan.md)
+[简体中文](README.zh-CN.md) · [Skill](skills/gpt-quota-prewarm/SKILL.md) · [Example plan](examples/warmup-plan.md)
 
-> **Status:** experimental workflow / community project. Not an OpenAI feature or a guarantee of lower subscription usage.
+> **Status:** experimental Codex-focused Agent Skill, built independently. Not affiliated with OpenAI and not a guarantee of lower subscription usage.
 
 ## The idea
 
@@ -42,7 +42,7 @@ Keep reusable thread             Save files to repository
 
 ## What the skill does
 
-`context-prewarm` is a portable [Agent Skill](https://agentskills.io/specification) that guides an agent to:
+`gpt-quota-prewarm` is a portable [Agent Skill](https://agentskills.io/specification) that guides an agent to:
 
 - decide **whether** prewarming makes sense (including a *do nothing* option);
 - rank candidate future-work contexts by reuse, stability, deliverable value, cost, and sensitivity;
@@ -59,16 +59,16 @@ Install the skill where your agent discovers project skills. For Codex, a common
 
 ```bash
 mkdir -p .agents/skills
-cp -R /path/to/context-prewarm/skills/context-prewarm .agents/skills/
+cp -R /path/to/gpt-quota-prewarm/skills/gpt-quota-prewarm .agents/skills/
 ```
 
 Or copy into your user-level agent skills directory if supported. Then ask your agent:
 
-> Use `context-prewarm`. I have some usage left before reset. Assess whether preparing my current project for tomorrow's PR review is worthwhile. Propose a small pilot first; do not perform an expensive warm-up without approval.
+> Use `gpt-quota-prewarm`. I have some usage left before reset. Assess whether preparing my current project for tomorrow's PR review is worthwhile. Propose a small pilot first; do not perform an expensive warm-up without approval.
 
 For an approved execution:
 
-> Use `context-prewarm` on this repository. Read the stable architecture and contribution docs, create an evidence-backed `docs/PROJECT_CONTEXT.md`, avoid secrets and production changes, and finish with a cache measurement plan.
+> Use `gpt-quota-prewarm` on this repository. Read the stable architecture and contribution docs, create an evidence-backed `docs/PROJECT_CONTEXT.md`, avoid secrets and production changes, and finish with a cache measurement plan.
 
 ### Optional no-dependency planning tools
 
@@ -88,7 +88,7 @@ The estimator reports **relative input-processing units, not Codex subscription 
 4. **Prewarm productively.** Read only relevant sources, build an accurate evidence index, and save a portable work product. Retain the thread to improve chances of matching the prefix later.
 5. **Verify and adapt.** Check cache tokens/hit rates and realized usage *if exposed by your client*, and assess artifact usefulness. If metrics are unavailable, label savings **unverified**.
 
-See the [worked example](examples/warmup-plan.md) and the [technical assumptions](skills/context-prewarm/references/MODEL.md).
+See the [worked example](examples/warmup-plan.md) and the [technical assumptions](skills/gpt-quota-prewarm/references/MODEL.md).
 
 ## Important limitations
 

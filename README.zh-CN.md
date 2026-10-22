@@ -1,20 +1,20 @@
-# Context Prewarm｜闲置额度预热
+# GPTQuotaPrewarm｜Codex / GPT 闲置额度预热
 
-[![CI](https://github.com/taohuayi/context-prewarm/actions/workflows/ci.yml/badge.svg)](https://github.com/taohuayi/context-prewarm/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/taohuayi/context-prewarm)](https://github.com/taohuayi/context-prewarm/releases/tag/v0.1.0)
+[![CI](https://github.com/taohuayi/context-prewarm/actions/workflows/ci.yml/badge.svg)](https://github.com/taohuayi/context-prewarm/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/taohuayi/context-prewarm)](https://github.com/taohuayi/context-prewarm/releases/tag/v0.2.0)
 
-[正式版本 v0.1.0](https://github.com/taohuayi/context-prewarm/releases/tag/v0.1.0) · [更新记录](CHANGELOG.md)
+[正式版本 v0.2.0](https://github.com/taohuayi/context-prewarm/releases/tag/v0.2.0) · [更新记录](CHANGELOG.md)
 
 **把即将闲置的 AI 使用额度，转化成未来可复用的上下文和实际工作成果。**
 
-[English](README.md) · [安装 Skill](skills/context-prewarm/SKILL.md) · [示例方案](examples/warmup-plan.md)
+[English](README.md) · [安装 Skill](skills/gpt-quota-prewarm/SKILL.md) · [示例方案](examples/warmup-plan.md)
 
-> 这是实验性的开源工作流，不是 OpenAI 官方功能，更不承诺订阅额度一定减少。
+> 这是独立开发、重点适配 Codex 的实验性开源 Agent Skill，并非 OpenAI 官方产品，也不承诺订阅额度一定减少。
 
 ## 最初的问题
 
 > 现在没有特别重要的任务，但当前 Codex 额度快要重置了。我能否提前让 Astra 阅读我未来肯定需要的项目材料，在保留旧会话和可复用提示词前缀的前提下，减少未来真正做事时的重复输入成本？
 
-**答案：有条件地可以。** 我们把这个策略叫作「闲置额度上下文预热」（Idle-capacity Context Prewarming）。重要的是同时生产两份资产：
+**答案：有条件地可以。** 我们把这个策略叫作「闲置额度上下文预热」（Idle-capacity GPTQuotaPrewarming）。重要的是同时生产两份资产：
 
 1. **上下文缓存资产（不保证）**：未来同一模型、同一线程、匹配的前缀可能命中缓存，从而降低重复输入成本。
 2. **持久成果资产（更可靠）**：项目地图、架构分析、证据索引、检查清单、决策记录等保存到文件中；即使缓存未命中仍有价值。
@@ -33,18 +33,18 @@
 
 ## 安装
 
-将 `skills/context-prewarm/` 复制到 Codex 项目里的 `.agents/skills/context-prewarm/`；其他 Agent 使用其支持的 Agent Skills 目录。这个 Skill 只有说明文件，不要求 API Key，也不提供自动调度功能。
+将 `skills/gpt-quota-prewarm/` 复制到 Codex 项目里的 `.agents/skills/gpt-quota-prewarm/`；其他 Agent 使用其支持的 Agent Skills 目录。这个 Skill 只有说明文件，不要求 API Key，也不提供自动调度功能。
 
 ```bash
 mkdir -p .agents/skills
-cp -R /path/to/context-prewarm/skills/context-prewarm .agents/skills/
+cp -R /path/to/gpt-quota-prewarm/skills/gpt-quota-prewarm .agents/skills/
 ```
 
 ## 如何触发
 
 第一次先让 Agent 评估，不要马上大规模读取：
 
-> 请使用 context-prewarm。今天额度有富余，明天我要继续处理当前 GitHub 仓库的代码审查。请评估最值得提前理解的稳定内容、预计复用频率、信息敏感性、实际工作产物和成本；提出一个有边界的小实验。执行之前先给我看方案。
+> 请使用 gpt-quota-prewarm。今天额度有富余，明天我要继续处理当前 GitHub 仓库的代码审查。请评估最值得提前理解的稳定内容、预计复用频率、信息敏感性、实际工作产物和成本；提出一个有边界的小实验。执行之前先给我看方案。
 
 批准后：
 
@@ -63,9 +63,9 @@ cp -R /path/to/context-prewarm/skills/context-prewarm .agents/skills/
 
 ## 项目内容
 
-- [`SKILL.md`](skills/context-prewarm/SKILL.md)：Agent 实际执行的完整步骤和边界。
-- [`references/MODEL.md`](skills/context-prewarm/references/MODEL.md)：收益模型、缓存假设和失败条件。
-- [`assets/WARMUP_REPORT_TEMPLATE.md`](skills/context-prewarm/assets/WARMUP_REPORT_TEMPLATE.md)：每次预热必须交付的清单。
+- [`SKILL.md`](skills/gpt-quota-prewarm/SKILL.md)：Agent 实际执行的完整步骤和边界。
+- [`references/MODEL.md`](skills/gpt-quota-prewarm/references/MODEL.md)：收益模型、缓存假设和失败条件。
+- [`assets/WARMUP_REPORT_TEMPLATE.md`](skills/gpt-quota-prewarm/assets/WARMUP_REPORT_TEMPLATE.md)：每次预热必须交付的清单。
 - [`tools/prewarm.py`](tools/prewarm.py)：无第三方依赖的候选任务排序和粗略经济性测算。
 - [`examples/`](examples)：候选数据及完整示例。
 - [`tests/`](tests)：工具测试。

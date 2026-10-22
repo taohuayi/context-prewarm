@@ -1,12 +1,12 @@
 # GPTQuotaPrewarm — repository naming and releases
 
-The public project is branded **GPTQuotaPrewarm**; the desired GitHub repository name is `gpt-quota-prewarm` and the Agent Skill ID is `gpt-quota-prewarm`.
+The public project is **[taohuayi/GPTQuotaPrewarm](https://github.com/taohuayi/GPTQuotaPrewarm)**. Its GitHub repository name is `GPTQuotaPrewarm`; the installable Agent Skill ID remains `gpt-quota-prewarm`.
 
-## Rename the GitHub repository
+## Repository rename status
 
-The repository owner must open the existing repository's **Settings → General → Repository name**, change `context-prewarm` to `gpt-quota-prewarm`, and save. The connected integration that authored the source cannot access GitHub's repository settings endpoint.
+The repository was renamed from `context-prewarm` to `GPTQuotaPrewarm` on GitHub. Use the canonical URL `https://github.com/taohuayi/GPTQuotaPrewarm` for new references.
 
-GitHub normally redirects old repository URLs to the new location. Verify CI badges and external links after rename; do not delete/recreate the existing repository or discard git history.
+GitHub normally redirects old repository URLs to the new location. Preserve the repository and its Git history, tags, and releases; avoid deleting and recreating it.
 
 ## About details
 

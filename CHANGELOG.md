@@ -8,7 +8,7 @@
 - Updated the English and Chinese README, CLI help text, examples, validator and report template.
 - Clarified the Codex-oriented use case and kept the project's explicit non-affiliation with OpenAI.
 - Kept old `v0.1.0` release notes below for historical accuracy.
-- Repository rename to `gpt-quota-prewarm` is a separate GitHub Settings operation; GitHub's redirect preserves links to old repository URLs once renamed.
+- GitHub repository renamed from `context-prewarm` to **`taohuayi/GPTQuotaPrewarm`**. Canonical URL: https://github.com/taohuayi/GPTQuotaPrewarm. GitHub's redirect normally preserves old repository URLs.
 
 ### Upgrade from v0.1.0
 

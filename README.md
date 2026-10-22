@@ -1,8 +1,8 @@
 # GPTQuotaPrewarm — Codex Quota Prewarming & Prompt Cache Workflow
 
-[![CI](https://github.com/taohuayi/context-prewarm/actions/workflows/ci.yml/badge.svg)](https://github.com/taohuayi/context-prewarm/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/taohuayi/context-prewarm)](https://github.com/taohuayi/context-prewarm/releases/tag/v0.2.0)
+[![CI](https://github.com/taohuayi/GPTQuotaPrewarm/actions/workflows/ci.yml/badge.svg)](https://github.com/taohuayi/GPTQuotaPrewarm/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/taohuayi/GPTQuotaPrewarm)](https://github.com/taohuayi/GPTQuotaPrewarm/releases/tag/v0.2.0)
 
-[Latest release: v0.2.0](https://github.com/taohuayi/context-prewarm/releases/tag/v0.2.0) · [Changelog](CHANGELOG.md)
+[Latest release: v0.2.0](https://github.com/taohuayi/GPTQuotaPrewarm/releases/tag/v0.2.0) · [Changelog](CHANGELOG.md)
 
 **Turn unused Codex quota into reusable GPT context and durable work.**
 

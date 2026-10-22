@@ -1,8 +1,8 @@
 # GPTQuotaPrewarm｜Codex / GPT 闲置额度预热
 
-[![CI](https://github.com/taohuayi/context-prewarm/actions/workflows/ci.yml/badge.svg)](https://github.com/taohuayi/context-prewarm/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/taohuayi/context-prewarm)](https://github.com/taohuayi/context-prewarm/releases/tag/v0.2.0)
+[![CI](https://github.com/taohuayi/GPTQuotaPrewarm/actions/workflows/ci.yml/badge.svg)](https://github.com/taohuayi/GPTQuotaPrewarm/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/taohuayi/GPTQuotaPrewarm)](https://github.com/taohuayi/GPTQuotaPrewarm/releases/tag/v0.2.0)
 
-[正式版本 v0.2.0](https://github.com/taohuayi/context-prewarm/releases/tag/v0.2.0) · [更新记录](CHANGELOG.md)
+[正式版本 v0.2.0](https://github.com/taohuayi/GPTQuotaPrewarm/releases/tag/v0.2.0) · [更新记录](CHANGELOG.md)
 
 **把即将闲置的 AI 使用额度，转化成未来可复用的上下文和实际工作成果。**
 
